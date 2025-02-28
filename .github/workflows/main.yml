@@ -15,6 +15,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        
+      - name: Set Working Directory
+        run: cd ${{ github.workspace }}
 
       - name: Install Bazel
         uses: bazelbuild/setup-bazelisk@v2
@@ -26,7 +29,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Bazel Build
+        working-directory: basic_bazel_project
         run: bazel build //tests:test_mymodule
 
       - name: Run Bazel Tests
+        working-directory: basic_bazel_project
         run: bazel test //tests:test_mymodule
+
