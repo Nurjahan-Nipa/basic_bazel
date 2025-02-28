@@ -1,0 +1,5 @@
+binary_type=Python
+workspace_name=_main
+symlink_runfiles_enabled=0
+python_bin_path=python_3_12_8_x86_64-pc-windows-msvc/python.exe
+use_zip_file=1

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite name="tests/test_mymodule.exe" tests="1" failures="0" errors="0">
+<testcase name="tests/test_mymodule.exe" status="run" duration="3" time="3"></testcase>
+<system-out><![CDATA[Executing tests from //tests:test_mymodule
+-----------------------------------------------------------------------------
+]]></system-out>
+</testsuite>
+</testsuites>
