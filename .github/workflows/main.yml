@@ -16,10 +16,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Debugging: Show Directory Structure
+        run: ls -R
+
       - name: Install Bazel
         uses: bazelbuild/setup-bazelisk@v2
 
       - name: Install Python Dependencies
+        working-directory: basic_bazel_project
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
